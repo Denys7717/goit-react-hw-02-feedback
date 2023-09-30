@@ -32,7 +32,10 @@ export class FeedBack extends Component {
     return (
       <>
         <Section title={'Please leave feedback'}>
-          <FeedbackOptions onClick={this.handleClick} />
+          <FeedbackOptions
+            onLeaveFeedback={this.handleClick}
+            options={Object.keys(this.state)}
+          />
           {this.countTotalFeedback() ? (
             <Statistics
               good={this.state.good}
