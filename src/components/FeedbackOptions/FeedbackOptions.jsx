@@ -1,7 +1,6 @@
 import css from './FeedbackOptions.module.css';
 
 export const FeedbackOptions = ({ onLeaveFeedback, options }) => {
-  console.log(options);
   return (
     <>
       <div className={css.buttons}>
